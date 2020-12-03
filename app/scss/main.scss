@@ -1,0 +1,67 @@
+@import 'config';
+
+html{
+    overflow-x: hidden;
+}
+.btn{
+    padding-top: 4px;
+    height: 40px;
+    width: 100%;
+    border:none;
+    border-radius:20px;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px;
+    -ms-border-radius:20px;
+    -o-border-radius:20px;
+    &:focus{
+        outline: none;
+    }
+
+    &[disabled]{
+    }
+
+    &.btn-bordered{
+        border: 1px solid ;
+    }
+
+    &.btn-addToCart {
+        margin-top: 16px;
+    }
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin:0 auto;
+    position: relative;
+    padding-left: 16px;
+    padding-right: 16px;
+    
+    // @media screen and (max-width:767px){
+    //     padding: 0 16px;
+    // }
+}
+
+figure,
+ul,
+li,
+p,
+label{
+    margin:0;
+    padding:0;
+}
+
+button,
+input[type="submit"]{
+    &:focus{
+        outline: none;
+    }
+}
+
+main{
+    padding-bottom: 64px;
+    @media screen and (max-width:767px){
+        padding-bottom: 30px;
+    }
+}
+
