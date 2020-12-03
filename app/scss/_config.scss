@@ -1,6 +1,6 @@
 // USER VARIABLES SECTION
 
-$accent: orange; // Accent Color
+$accent: #fff; // Accent Color
 $fontsize: 16px; // Body Font Size
 $system: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
 $roboto: Roboto, sans-serif; // Roboto Font Family
@@ -10,6 +10,7 @@ $orange:#ff9015;
 $yellow: #ffd400;
 $black:#24273E;
 $white:#FFFFFF;
+$grey: #555d63;
 
 // Bootstrap compatible gutter variable => $gutter
 $grid-gutter-width: 20px;
@@ -40,7 +41,7 @@ $gutter: $grid-gutter-width;
 	justify-content: $justify;
 }
 
-@mixin font-settings($f-size:$fontsize, $f-weight: normal, $f-color:$black, $align:left){
+@mixin font-settings($f-size:$fontsize, $f-weight: normal, $f-color:$grey, $align:left){
 	font-size:$f-size;
 	font-weight:$f-weight;
 	color:$f-color;

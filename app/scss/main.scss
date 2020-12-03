@@ -1,18 +1,13 @@
 @import 'config';
+@import 'theme';
 
 html{
     overflow-x: hidden;
 }
 .btn{
-    padding-top: 4px;
-    height: 40px;
-    width: 100%;
+    padding: 14px 22px;
     border:none;
-    border-radius:20px;
-    -webkit-border-radius:20px;
-    -moz-border-radius:20px;
-    -ms-border-radius:20px;
-    -o-border-radius:20px;
+    margin-bottom: 37px;
     &:focus{
         outline: none;
     }
