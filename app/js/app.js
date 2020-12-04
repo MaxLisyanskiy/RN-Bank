@@ -43,9 +43,9 @@ document.addEventListener("DOMContentLoaded", function() {
         if ($(window).width() >= '500'){
             setTimeout(function() {
                 $('#btn').css('display', 'block').addClass('fadeInUp');
-            }, 15000);
+            }, 15500);
         } else {
-            $('#btn').css('display', 'block');
+            $('#btn').css('display', 'none');
         }
     }
 

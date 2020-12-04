@@ -88,7 +88,5 @@ body {
 	min-width: 320px;
 	position: relative;
 	line-height: 1.65;
-	@media screen and (max-width:767px){
-		overflow-x: hidden;		
-	}
+	overflow: hidden;
 }
