@@ -8,10 +8,6 @@
 	<meta name="viewport" content="width=device-width">
 	<meta property="og:image" content="images/dest/preview.jpg">
 	<link rel="icon" href="images/favicon.png">
-	<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
 	<link rel="stylesheet" href="css/app.min.css">
 
 </head>
@@ -23,7 +19,13 @@
 
 			<!--Main-media-->
 			<div class="main-media">
-				<video class="main-media__video" src="video/video_1920x1080.mp4" autoplay muted></video>
+				<video class="main-media__video" autoplay muted poster="images/dest/screenDesktop.png">
+					<source src="video/video_1920x1080.mp4" type="video/mp4">
+					<source src="video/video_1920x1080.webm" type="video/webm">
+				</video>
+				<video class="main-media__video-mob" autoplay muted poster="images/dest/screenDesktop.png">
+					<source src="video/video_1080х1920.webm" type="video/webm">
+				</video>
 			</div>
 
 			<!--Main-top-->
@@ -37,8 +39,12 @@
 					</div>
 				</div>
 				<div class="main-top__sound">
-					<audio src="audio/audio.mp3"></audio>
-					<img class="main-top__sound-icon" src="images/dest/SoundOn.png" alt="Звук Включен">
+						<audio id="myaudio" hidden>
+							<source src="audio/audio.mp3" type="audio/mp3">
+							<source src="audio/audio_01.ogg" type="audio/ogg">
+							<source src="audio/audio_01.wav" type="audio/wav">
+						</audio>
+					<img class="main-top__sound-icon" src="images/dest/SoundOff.png" alt="Звук Включен">
 				</div>
 			</div>
 
@@ -58,7 +64,7 @@
 					Мы желаем вам, чтобы все мечты сбылись в новом году. Пусть вас ожидают приятные сюрпризы и радостные встречи, успех и процветание, здоровье и бодрость, счастье и любовь! Пусть старый год уходя, заберет с собой все проблемы, жизнь заиграет новыми, яркими красками.
 					<br><br>
 					Мира и тепла вам в Новом году!</p>
-				<a class="btn-orange" href="/">О фонде "Дети-Бабочки"</a>
+				<a class="btn-orange" href="https://deti-bela.ru/">О фонде "Дети-Бабочки"</a>
 			</div>
 
 
