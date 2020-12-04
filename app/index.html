@@ -6,8 +6,12 @@
 	<meta charset="utf-8">
 	<title>РН-Банк</title>
 	<meta name="viewport" content="width=device-width">
-	<link rel="icon" href="images/favicon.png">
 	<meta property="og:image" content="images/dest/preview.jpg">
+	<link rel="icon" href="images/favicon.png">
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 	<link rel="stylesheet" href="css/app.min.css">
 
 </head>
@@ -17,8 +21,13 @@
 	<main>
 		<div class="main">
 
+			<!--Main-media-->
+			<div class="main-media">
+				<video class="main-media__video" src="video/video_1920x1080.mp4" autoplay muted></video>
+			</div>
+
 			<!--Main-top-->
-			<div class="main-top">
+			<div class="main-top" id="main-top">
 				<div class="main-top__icons">
 					<div class="main-top__icons-bank">
 						<img src="images/dest/RN-logo.svg" alt="РН Банк">
@@ -28,24 +37,39 @@
 					</div>
 				</div>
 				<div class="main-top__sound">
-					<img src="images/dest/SoundOn.png" alt="Звук Включен">
+					<audio src="audio/audio.mp3"></audio>
+					<img class="main-top__sound-icon" src="images/dest/SoundOn.png" alt="Звук Включен">
 				</div>
 			</div>
 
 			<!--Main-middle-->
-			<div class="main-middle">
-				<p class="main-middle__title-text">Дорогие друзья и партнеры! <br>
-					«РН Банк» и фонд «Дети-бабочки» <br>
-					поздравляют вас</p>
-				<p class="main-middle__subtitle">С Новым годом и Рождеством!</p>
+			<div class="main-middle" id="main-middle">
+				<div class="main-middle__wrapper">
+					<p class="main-middle__title-text">Дорогие друзья и партнеры! <br>
+						«РН Банк» и фонд «Дети-бабочки» <br>
+						поздравляют вас</p>
+					<p class="main-middle__subtitle">С Новым годом и Рождеством!</p>
+				</div>
 			</div>
 
+			<div class="main-secondMiddle" id="main-secondMiddle">
+				<p class="main-secondMiddle__text">Мы поддерживаем нашу многолетнюю традицию и вместо новогодних подарков перечисляем средства для помощи в благотворительный фонд «Дети-бабочки».
+					<br><br>
+					Мы желаем вам, чтобы все мечты сбылись в новом году. Пусть вас ожидают приятные сюрпризы и радостные встречи, успех и процветание, здоровье и бодрость, счастье и любовь! Пусть старый год уходя, заберет с собой все проблемы, жизнь заиграет новыми, яркими красками.
+					<br><br>
+					Мира и тепла вам в Новом году!</p>
+				<a class="btn-orange" href="/">О фонде "Дети-Бабочки"</a>
+			</div>
+
+
 			<!--Main-bottom-->
-			<div class="main-bottom">
-				<button class="btn">
-					<img src="images/dest/repeat.png" alt="Посмотреть заново">
-					Посмотреть заново
-				</button>
+			<div class="main-bottom" id="main-bottom">
+				<a class="btn" id="btn" onClick="window.location.reload()">
+					<div class="btn-wrapper">
+						<img src="images/dest/repeat.png" alt="Посмотреть заново">
+						Посмотреть заново
+					</div>
+				</a>
 			</div>
 		</div>
 	</main>

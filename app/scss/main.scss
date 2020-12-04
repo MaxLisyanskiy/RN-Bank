@@ -1,27 +1,9 @@
 @import 'config';
+@import 'animation';
 @import 'theme';
 
 html{
     overflow-x: hidden;
-}
-.btn{
-    padding: 14px 22px;
-    border:none;
-    margin-bottom: 37px;
-    &:focus{
-        outline: none;
-    }
-
-    &[disabled]{
-    }
-
-    &.btn-bordered{
-        border: 1px solid ;
-    }
-
-    &.btn-addToCart {
-        margin-top: 16px;
-    }
 }
 
 .wrapper{
@@ -53,10 +35,4 @@ input[type="submit"]{
     }
 }
 
-main{
-    padding-bottom: 64px;
-    @media screen and (max-width:767px){
-        padding-bottom: 30px;
-    }
-}
 
