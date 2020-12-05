@@ -48,6 +48,9 @@
         position: relative;
         @include flex;
         padding: 27px 42px 0 47px;
+        @media screen and (max-height:500px){
+            padding: 15px 25px 0 25px;
+        }
         @media screen and (max-width:500px){
             flex-direction: column;
             padding: 13px 22px 0 24px;
@@ -105,6 +108,9 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
+            @media screen and (max-height:500px){
+                margin-top: 10px;
+            }
             @media screen and (max-width:500px){
                 margin-top: 40px;
             }
@@ -116,8 +122,14 @@
         &__title-text{
             font-size: 27px;
             font-weight: 300;
+            @media screen and (max-height:500px){
+                font-size: 21px;
+            }
             @media screen and (max-width:500px){
                 font-size: 21px;
+            }
+            @media screen and (max-height:350px){
+                font-size: 15px;
             }
             @media screen and (max-width:350px){
                 font-size: 17px;
@@ -127,9 +139,17 @@
         &__subtitle{
             font-size: 31px;
             font-weight: 500;
+            @media screen and (max-height:500px){
+                font-size: 31px;
+                line-height: 1.2;
+            }
             @media screen and (max-width:500px){
                 font-size: 37px;
                 margin: 0 40px;
+                line-height: 1.2;
+            }
+            @media screen and (max-height:350px){
+                font-size: 23px;
                 line-height: 1.2;
             }
             @media screen and (max-width:350px){
@@ -150,11 +170,25 @@
         animation-duration: 1s;
         -webkit-animation-fill-mode: both;
         animation-fill-mode: both;
+        @media screen and (max-height:500px){
+            width: 339px;
+            margin-top: 10px;
+            margin-left: 25px;
+            font-size: 12px;
+            line-height: 1.2;
+        }
         @media screen and (max-width:500px){
             width: auto;
             margin: 17px 19px 0 19px;
             font-size: 15px;
             line-height: 1.2;
+        }
+        @media screen and (max-height:350px){
+            width: 268px;
+            margin-top: 10px;
+            margin-left: 25px;
+            font-size: 10px;
+            line-height: 1;
         }
         @media screen and (max-width:350px){
             font-size: 11px;
@@ -180,9 +214,20 @@
             text-align: center;
             padding-top: 11px;
             text-decoration: none;
+            @media screen and (max-height:500px){
+                width: 167px;
+                height: 35px;
+                margin: 20px 0 0 0;
+                padding-top: 10px;
+            }
             @media screen and (max-width:500px){
                 width: 200px;
                 height: 38px;
+            }
+            @media screen and (max-height:350px){
+                width: 137px;
+                height: 28px;
+                margin: 15px 0 0 0;
             }
             @media screen and (max-width:350px){
                 width: 149px;
@@ -206,7 +251,12 @@
             animation-fill-mode: both;
             cursor: pointer;
             text-decoration: none;
-
+            @media screen and (max-height:500px){
+                font-size: 12px;
+            }
+            @media screen and (max-height:350px){
+                font-size: 11px;
+            }
             &-wrapper{
                 padding: 9px 21px 10px 15px;
                 border:none;
@@ -221,12 +271,24 @@
                     justify-content: center;
                     font-size: 12px;
                 }
+                @media screen and (max-height:350px){
+                    margin-bottom: 10px;
+                    margin-right: 20px;
+                }
             }
             
             & img {
                 margin-right: 10px;
                 @media screen and (max-width:500px){
                     max-width: 20px;
+                    width: 100%;
+                }
+                @media screen and (max-height:500px){
+                    max-width: 20px;
+                    width: 100%;
+                }
+                @media screen and (max-height:350px){
+                    max-width: 15px;
                     width: 100%;
                 }
             }
