@@ -40,16 +40,25 @@ document.addEventListener("DOMContentLoaded", function() {
 
     //Появление btn
     function windowSize(){
-        if ($(window).width() >= '500'){
+        if ($(window).width() >= '450'){
             setTimeout(function() {
                 $('#btn').css('display', 'block').addClass('fadeInUp');
-            }, 15500);
+            }, 16000);
         } else {
             $('#btn').css('display', 'none');
         }
     }
 
-    $(window).on('load resize',windowSize);
+    windowSize();
+
+    // Перезагрузка страницы при перевороте экрана
+    window.addEventListener("orientationchange", function() {
+        location.reload();
+    }, false);
+
+    window.addEventListener("resize", function() {
+        location.reload();
+    }, false);
 });
 
 
