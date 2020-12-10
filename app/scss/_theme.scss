@@ -143,6 +143,12 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
+            @media screen and (max-height:650px){
+                margin-top: 80px;
+            }
+            @media screen and (max-height:550px){
+                margin-top: 40px;
+            }
             @media screen and (max-height:500px){
                 margin-top: 10px;
             }
@@ -197,14 +203,44 @@
 
     &-secondMiddle{
         position: relative;
-        width: 453px;
-        margin-top: 59px;
-        margin-left: 49px;
+        width: 750px;
+        margin-top: 40px;
+        margin-left: 46px;
         font-weight: 500;
         -webkit-animation-duration: 1s;
         animation-duration: 1s;
         -webkit-animation-fill-mode: both;
         animation-fill-mode: both;
+        @media screen and (max-width:1500px){
+            width: 700px;
+        }
+        @media screen and (max-width:1400px){
+            width: 597px;
+        }
+        @media screen and (max-width:1200px){
+            width: 550px;
+            font-size: 14px;
+        }
+        @media screen and (max-height:800px){
+            margin-top: 15px;
+        }
+        @media screen and (max-height:700px){
+            line-height: 1.4;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        @media screen and (max-height:600px){
+            line-height: 1.4;
+            margin-top: 15px;
+            font-size: 12px;
+            width: 467px;
+        }
+        @media screen and (max-height:550px){
+            line-height: 1.4;
+            margin-top: 15px;
+            font-size: 11px;
+            width: 440px;
+        }
         @media screen and (max-height:500px){
             width: 339px;
             margin-top: 10px;
@@ -235,9 +271,9 @@
 
         & .btn-orange{
             display: none;
-            width: 221px;
-            height: 49px;
-            margin: 46px 0 0 0;
+            width: 220px;
+            height: 48px;
+            margin: 15px 0 0 0;
             background-color: $orange;
             border:none;
             color: $white;
@@ -249,8 +285,25 @@
             text-align: center;
             padding-top: 11px;
             text-decoration: none;
+            @media screen and (max-width:1200px){
+                width: 187px;
+                height: 40px;
+                padding-top: 9px;
+            }
+            @media screen and (max-height:700px){
+                width: 190px;
+                height: 41px;
+            }
             @media screen and (max-height:600px){
                 margin: 10px 0 0 0;
+                padding-top: 9px;
+                width: 162px;
+                height: 35px;
+            }
+            @media screen and (max-height:550px){
+                padding-top: 7px;
+                width: 140px;
+                height: 30px;
             }
             @media screen and (max-height:500px){
                 width: 167px;

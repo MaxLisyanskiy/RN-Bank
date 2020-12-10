@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     windowSize();
 
-    // Перезагрузка страницы при перевороте экрана
+    //Перезагрузка страницы при перевороте экрана
     window.addEventListener("orientationchange", function() {
         location.reload();
     }, false);
